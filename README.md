@@ -25,7 +25,6 @@ The main goal of this project is to analyze the user's responses and calculate s
 - PyTorch
 - LangChain
 - Cohere AI (Language Model)
-- Web Framework (e.g., Flask, Django) for the web interface
 
 ## Getting Started
 
