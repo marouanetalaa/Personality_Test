@@ -1,48 +1,30 @@
-# Personality Wellness Chatbot
+# Big five personality assessement test with LLMs :
 
-This project is an implementation of a well-known personality test, where 50 questions are asked, and the answers are provided on a scale of 1 to 5, indicating the level of agreement with each statement. However, in this version, the format has been modified to include 10 open-ended questions, allowing users to express their stories and emotions freely.
+This Python script is designed to assess personality traits based on user input and provide personalized advice using natural language processing models.
 
-## Project Overview
+## Dependencies
 
-The main goal of this project is to analyze the user's responses and calculate scores for five different personality traits: Extraversion, Agreeableness, Conscientiousness, Emotional Stability, and Intellect/Imagination. These scores are then used to generate a personality profile, which can be helpful in various contexts, such as self-awareness, personal development, or even mental health assessments.
+You can install them using pip and the `requirements.txt` file provided.
 
-## Key Features
+`pip install requirements.txt`
 
-1. **User Input Collection**: A web interface is provided to collect user responses to the 10 open-ended questions. These responses are stored in a database for further processing.
+## Usage
 
-2. **Response Chunking**: The user's responses are chunked into smaller segments to facilitate analysis.
+Run :
 
-3. **Correlation Scoring**: Each chunk of the user's response is compared against the original 50 statements using a custom language model prompt with a PyDantic parser. This process calculates a correlation score between the user's response and each statement, indicating the level of agreement or disagreement.
+`python app.py`
 
-4. **Tensor Calculations**: The correlation scores are organized into a tensor data structure, which is then multiplied by a calculation matrix to determine the scores for the five personality traits.
+## How it Works
 
-5. **Personality Profile Generation**: The final personality scores are averaged across all response chunks, and a graphical representation of the user's personality profile is generated.
-
-## Technologies Used
-
-- Python
-- Jupyter Notebook
-- PyTorch
-- LangChain
-- Cohere AI (Language Model)
-
-## Getting Started
-
-1. Clone the repository
-2. Install the required dependencies
-3. Set up the necessary API keys and environment variables
-4. Run the Jupyter Notebook to explore the code and calculations
-5. Deploy the web interface to collect user responses
-6. Run the analysis pipeline to generate personality profiles
+1. **Personality Assessment**: The code evaluates personality traits based on input sentences and assigns scores to different personalities like Extraversion, Agreeableness, Conscientiousness, Emotional Stability, and Intellect/Imagination.
+2. **Advice Generation**: Using the assessed personality traits, the script generates personalized advice using natural language processing models. The advice is tailored to the user's specific personality profile.
+3. **Visualization**: The script generates visualizations of personality trait distributions for easy interpretation.
+4. **Result**: The result is loaded in a markdown file that is sent to your input email.
 
 ## Contributing
 
-Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request with any enhancements or bug fixes.
 
-## License
+## Blog post about it :
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-This project was inspired by the well-known personality tests and the need for a more flexible and interactive approach to personality assessment.
+Coming soon
