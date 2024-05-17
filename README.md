@@ -27,4 +27,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request w
 
 ## Blog post about it :
 
-Coming soon
+[Unveiling Your Personality with AI-Powered Personality Assessment](https://medium.com/@marouanetalaa101/unveiling-your-personality-with-ai-powered-personality-assessment-3c2244cd2e29)
